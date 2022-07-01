@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soping List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="mens.html">Mens</a>
+            <a href="womens.html">Womens</a>
+        </div>
+        <div>
+            <a href="cartPage.html"><img src="cart-arrow-down-solid.svg" class="cartIcon" alt=""></a><span
+                id="cartCount">0</span>
+        </div>
+    </nav>
+
+    <section class="cartSection">
+        <div id="cartitem">
+        </div>
+        <div id="cartPayment">
+            <form>
+                <label for="">Apply Promo</label>
+                <input type="text" id="promo" placeholder="Enter Promo" value="">
+
+                <input type="submit" value="Apply Promo">
+            </form>
+            <div>
+                <button><a href="paymentGateway.html" onclick="updatePay()"> Make Payment </a></button>
+                <p> &#8377;<strong id="cartTotalPrice">0.00</strong></p>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="cartPage.js"></script>
+<script src="index.js"></script>
+
+</html>

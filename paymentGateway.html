@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="gateway.css">
+</head>
+
+<body>
+    <section>
+        <h1>Masai Payment Gateway</h1>
+        <form>
+            <label for="">Card Number</label>
+            <input type="number" id="cardNum" placeholder="Enter Card 16 Digit Number" required="required" value="">
+
+            <label for="">CVV</label>
+            <input type="number" id="cardCvv" placeholder="Enter CVV Number" required="required" value="">
+
+            <label for="">Expiry Date</label>
+            <input type="text" id="cardDate" placeholder="Enter Expiry Date" required="required" value="">
+
+            <label for="">Name</label>
+            <input type="text" id="cardName" placeholder="Enter Card Holder Name" value="">
+
+            <input type="submit" id="makePay"  value="">
+        </form>
+    </section>
+</body>
+<script src="paymentGateway.js"></script>
+</html>
